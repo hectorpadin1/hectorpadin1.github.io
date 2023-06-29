@@ -13,8 +13,7 @@
       <pubDate>Tue, 20 Jun 2023 03:05:30 +0200</pubDate>
       
       <guid>https://hectorpadin1.github.io/writeups/internal/</guid>
-      <description>Internal [TryHackme] URL: https://tryhackme.com/room/internal Difficulty: Hard. Subscription: Free. Creators: TheMayor and omarbadraan. Introduction To complete this room only two flags are requested, called user.txt and root.txt which are located inside the only machine of the scope. In addition, we are instructed that to perform the test we must modify the /etc/hosts file so that the domain name internal.thm points to the IP address of the virtual machine.
-The writeups for this machine have been performed following the path intended for this one.</description>
+      <description>Internal [TryHackme] URL: https://tryhackme.com/room/internal Difficulty: Hard. OS: Linux. Subscription: Free. Creators: TheMayor and omarbadraan. Introduction To complete this room only two flags are requested, called user.txt and root.txt which are located inside the only machine of the scope. In addition, we are instructed that to perform the test we must modify the /etc/hosts file so that the domain name internal.thm points to the IP address of the virtual machine.</description>
     </item>
     
   </channel>

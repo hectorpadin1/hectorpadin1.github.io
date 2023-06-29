@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>WordPress on </title>
-    <link>https://hectorpadin1.github.io/tags/wordpress/</link>
-    <description>Recent content in WordPress on </description>
+    <title>JuicyPotato on </title>
+    <link>https://hectorpadin1.github.io/tags/juicypotato/</link>
+    <description>Recent content in JuicyPotato on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Jun 2023 03:05:30 +0200</lastBuildDate><atom:link href="https://hectorpadin1.github.io/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Internal Walkthrough</title>
-      <link>https://hectorpadin1.github.io/writeups/internal/</link>
-      <pubDate>Tue, 20 Jun 2023 03:05:30 +0200</pubDate>
-      
-      <guid>https://hectorpadin1.github.io/writeups/internal/</guid>
-      <description>Internal [TryHackme] URL: https://tryhackme.com/room/internal Difficulty: Hard. OS: Linux. Subscription: Free. Creators: TheMayor and omarbadraan. Introduction To complete this room only two flags are requested, called user.txt and root.txt which are located inside the only machine of the scope. In addition, we are instructed that to perform the test we must modify the /etc/hosts file so that the domain name internal.thm points to the IP address of the virtual machine.</description>
-    </item>
-    
+    <lastBuildDate>Tue, 20 Jun 2023 03:05:30 +0200</lastBuildDate><atom:link href="https://hectorpadin1.github.io/tags/juicypotato/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Retro Walkthrough</title>
       <link>https://hectorpadin1.github.io/writeups/retro/</link>
