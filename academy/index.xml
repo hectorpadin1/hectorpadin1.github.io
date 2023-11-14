@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Academy on </title>
+    <link>https://hectorpadin1.github.io/academy/</link>
+    <description>Recent content in Academy on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://hectorpadin1.github.io/academy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aprende a programar en Python</title>
+      <link>https://hectorpadin1.github.io/academy/academy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hectorpadin1.github.io/academy/academy/</guid>
+      <description>¿Tienes miedo de suspender informática? Bueno, es normal, ya que es la asignatura que más suspenden los alumnos el primer año y cuenta con una tasa de aprobados de el 20%. Así que si estás cursando la materia de &amp;lsquo;informática&amp;rsquo; o &amp;lsquo;informática básica&amp;rsquo; en cualquiera de las siguientes ingenierías en la UDC: Mecánica, Eléctrica, Electrónica o Industrial, y no quieres formar parte de ese 80% de alumnos que no superan la asigatura, ¡has llegado al lugar correcto🤩!</description>
+    </item>
+  </channel>
+</rss>
